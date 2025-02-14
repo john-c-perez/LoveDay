@@ -38,25 +38,25 @@ function mostrarNuevoGif() {
     gifContainer.style.visibility = "visible";
     if (gifIndex===17){
         gifContainer.innerHTML = `<img src="${Gifs[gifIndex]}" class="gif-koala">`;
-        gifContainer.style.top="42%";
-        gifContainer.style.width = "150px"; 
-        gifContainer.style.height = "150px"; 
+        gifContainer.style.top="42vh";
+        gifContainer.style.width = "24vh"; 
+        gifContainer.style.height = "24vh"; 
     }else if (gifIndex===18){
         gifContainer.innerHTML = `<img src="${Gifs[gifIndex]}" class="gif-koala">`;
-        gifContainer.style.top="28%";
-        gifContainer.style.width = "200px"; 
-        gifContainer.style.height = "200px"; 
+        gifContainer.style.top="28vh";
+        gifContainer.style.width = "30vh"; 
+        gifContainer.style.height = "30vh"; 
         gifContainer.style.left = "43%"
     }else if(gifIndex===19){
         gifContainer.innerHTML = `<img src="${Gifs[gifIndex]}" class="gif-koala">`;
-        gifContainer.style.top="45%";
-        gifContainer.style.width = "250px"; 
-        gifContainer.style.height = "250px"; 
+        gifContainer.style.top="45vh";
+        gifContainer.style.width = "35vh"; 
+        gifContainer.style.height = "35vh"; 
         gifContainer.style.left = "44%"
     }else{
-        gifContainer.style.top="4%";
-        gifContainer.style.width = "300px"; 
-        gifContainer.style.height = "300px";
+        gifContainer.style.top="5vh";
+        gifContainer.style.width = "45vh"; 
+        gifContainer.style.height = "35vh";
         gifContainer.style.left = "50%"
         gifContainer.innerHTML = `<img src="${Gifs[gifIndex]}" class="gif-koala">`;
     }

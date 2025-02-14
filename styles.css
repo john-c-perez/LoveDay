@@ -24,6 +24,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Usa un porcentaje para el ancho */
+    max-width: 600px; /* Máximo ancho para pantallas grandes */
 }
 button {
     padding: 10px 20px;
@@ -50,7 +52,7 @@ button {
   display: flex;
   align-items: flex-start;
   position: absolute;
-  top: -5%;
+  top: -8vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -64,12 +66,12 @@ button {
   justify-content: center; /* Centra el GIF horizontalmente */
   align-items: center; /* Centra el GIF verticalmente */
   position: absolute;
-  top: 4%; /* Lo bajamos un poco para que no esté muy pegado arriba */
+  top: 10vh; /* Lo bajamos un poco para que no esté muy pegado arriba */
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
-  max-width: 300px; /* Máximo ancho */
-  max-height: 300px; /* Máximo alto */
+  max-width: 80vh; /* Máximo ancho */
+  max-height: 60vh; /* Máximo alto */
   overflow: hidden; /* Evita desbordes si el GIF es más grande */
   visibility: hidden; /* Oculto por defecto */
 }
@@ -77,6 +79,7 @@ button {
 .gif-koala {
   width: 100%; /* Ajusta el ancho al del contenedor */
   height: auto; /* Mantiene la proporción */
-  max-width: 300px; /* Tamaño máximo del GIF */
-  max-height: 300px;
+  max-width: 100%; /* Tamaño máximo del GIF */
+  max-height: 100%;
 }
+
