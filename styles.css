@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url("/images/dd7b19fc9bf0d477f311093ffe0a094e.gif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #dfd4d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.5s ease-in-out;
+}
+.container{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #c2185b;
+  }
+#no-btn{
+  position: relative;
+  align-items: center;
+  z-index: 999999;
+}
+
+
+.koala-container{
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.koala-container #g62, .koala-container #g66{
+  transition: translate 0.2s ease;
+  transform-origin: center;
+}
+#gif-container {
+  display: flex;
+  justify-content: center; /* Centra el GIF horizontalmente */
+  align-items: center; /* Centra el GIF verticalmente */
+  position: absolute;
+  top: 4%; /* Lo bajamos un poco para que no esté muy pegado arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  max-width: 300px; /* Máximo ancho */
+  max-height: 300px; /* Máximo alto */
+  overflow: hidden; /* Evita desbordes si el GIF es más grande */
+  visibility: hidden; /* Oculto por defecto */
+}
+
+.gif-koala {
+  width: 100%; /* Ajusta el ancho al del contenedor */
+  height: auto; /* Mantiene la proporción */
+  max-width: 300px; /* Tamaño máximo del GIF */
+  max-height: 300px;
+}
